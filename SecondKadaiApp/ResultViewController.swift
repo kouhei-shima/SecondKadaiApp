@@ -11,10 +11,14 @@ class ResultViewController: UIViewController {
     
     @IBOutlet weak var Label: UILabel!
     
+   var nameinput:String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let result = nameinput
+        Label.text = "こんにちは、\(result) さん"
     }
     
 
